@@ -8,7 +8,7 @@ def client():
         yield client
 
 def test_health(client):
-    """Test de l'endpoint /health"""
+    """Test endpoint /health       """
     response = client.get("/health")
     assert response.status_code == 200
     data = response.get_json()
