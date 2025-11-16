@@ -136,3 +136,4 @@ def test_scan_full(mock_get, scanner):
     assert "vulnerabilities" in result
     assert result["severity"] in ["LOW", "MEDIUM", "HIGH"]
     assert "scan_id" in result
+    
